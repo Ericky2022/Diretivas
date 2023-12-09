@@ -11,3 +11,24 @@
 <p [highlight]="'red'" [defaultColor]="'grey'">
   Texto com hilight com cores customizadas.
 </p>
+
+<h5>Diretiva Estruturada customizada - ngElse</h5>
+<div *ngIf="mostrarCursos">
+  Lista de cursos aqui.
+</div>
+
+<div *ngIf="mostrarCursos">
+Não existem cursos para serem Listados.
+</div>
+
+<br>
+
+<button (click)="onMostrarCursos()">
+  Mostrar ou esconder cursos.
+</button>
+
+<!-- <template [ngElse]="mostrarCursos">
+  <div>
+    Não existem cursos para serem Listados.
+  </div>
+</template> -->
